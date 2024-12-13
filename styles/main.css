@@ -1,7 +1,7 @@
 /* 
-Standard:
+Order:
 1. width, height
-2. direction
+2. direction, *-index
 3. display
 4. position
 5. margin, padding
@@ -21,7 +21,7 @@ Standard:
 }
 
 body {
-    background-color: #5A3A38;
+    background-color: /* #5A3A38 */ #C5405C;
     /* background-image: url('../img/background.png'); */
 }
 
@@ -67,8 +67,12 @@ header {
 
 #middle {
     width: 70%;
+    z-index: 0;
     display: inline-block;
+    padding: 16px;
+    font-size: 24px;
     background-color: #FFF;
+    box-shadow: -8px 0px 4px rgba(0, 0, 0, 0.3), 8px 0px 4px rgba(0, 0, 0, 0.3)
 }
 
 #right {
@@ -105,12 +109,18 @@ footer p {
     100% { transform: translate(-100%, 0); }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-width: 400px) {
     header {
         height: 100px;
     }
     #head-p {
         font-size: 32px;
+    }
+    footer {
+        padding: 4px 0 4px 0;
+    }
+    footer p {
+        font-size: 12px;
     }
 }
 
