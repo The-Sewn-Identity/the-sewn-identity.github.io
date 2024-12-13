@@ -27,8 +27,8 @@ body {
 
 #main-container {
     height: calc(100vh+0);
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
     background-color: #FFF;
 }
 
@@ -52,6 +52,10 @@ header {
     color: #FFF;
     font-size: 64px;
     font-family: New-Haettenschweiler;
+}
+
+#cross {
+    
 }
 
 footer {
@@ -82,11 +86,24 @@ footer p {
     100% { transform: translate(-100%, 0); }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     header {
         height: 100px;
     }
     #head-p {
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: 100px;
+    }
+    #head-p {
+        display: none;
+    }
+    #cross {
+        height: 100%;
+        margin: auto;
     }
 }
