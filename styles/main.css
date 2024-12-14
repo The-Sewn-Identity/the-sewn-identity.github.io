@@ -68,11 +68,41 @@ header {
 #middle {
     width: 70%;
     z-index: 0;
-    display: inline-block;
+    display: inline-flexbox;
     padding: 16px;
     font-size: 24px;
+    overflow: hidden;
     background-color: #FFF;
     box-shadow: -8px 0px 4px rgba(0, 0, 0, 0.3), 8px 0px 4px rgba(0, 0, 0, 0.3)
+}
+
+#desc {
+    width: 100%;
+    padding: 4px;
+    background-color: #EAEAEA;
+}
+
+#m {
+    width: 100%;
+    height: calc(100% - 52px);
+    display: flex;
+    margin-top: 16px;
+    border: 4px solid #EAEAEA;
+    background-color: #FFF;
+}
+
+#m-desc {
+    width: 30%;
+    margin: 8px;
+    padding: 4px;
+    background-color: #EAEAEA;
+}
+
+#m-list {
+    width: 70%;
+    margin: 8px;
+    padding: 4px;
+    background-color: #EAEAEA;
 }
 
 #right {
@@ -124,6 +154,27 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 720px) {
+    #middle {
+        font-size: 18px;
+    }
+    #m {
+        height: calc(100% - 48px);
+        display: inline-block;
+        padding: 8px;
+    }
+    #m-desc{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+    #m-list {
+        width: 100%;
+        display: flex;
+        margin: 8px 0px 0px 0px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     header {
         height: 100px;
@@ -134,5 +185,13 @@ footer p {
     #cross {
         height: 100%;
         margin: auto;
+    }
+    #middle {
+        padding: 8px;
+        font-size: 14px;
+    }
+    #m {
+        height: calc(100% - 34px);
+        margin-top: 8px;
     }
 }
