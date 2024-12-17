@@ -111,6 +111,27 @@ header {
     background-color: #FC7F4A;
 }
 
+.l-e {
+    display: flex;
+    margin: auto;
+}
+
+.l-e2 {
+    margin: auto;
+    display: flex;
+}
+
+.l-e2 a {
+    margin: auto;
+    text-decoration: none;
+}
+
+.favic {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
 footer {
     width: 100%;
     bottom: 0;
@@ -193,5 +214,9 @@ footer p {
     #m {
         height: calc(100% - 34px);
         margin-top: 8px;
+    }
+    .favic {
+        width: 24px;
+        height: 24px;
     }
 }
