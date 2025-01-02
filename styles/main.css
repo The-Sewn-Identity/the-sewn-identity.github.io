@@ -101,8 +101,6 @@ header {
 #m-list {
     width: 70%;
     margin: 8px;
-    padding: 4px;
-    background-color: #EAEAEA;
 }
 
 #right {
@@ -112,16 +110,19 @@ header {
 }
 
 .l-e {
-    display: flex;
     margin: auto;
+    margin-bottom: 8px;
+    display: flex;
+    padding: 4px;
+    background-color: #EAEAEA;
 }
 
-.l-e2 {
+.el {
     margin: auto;
     display: flex;
 }
 
-.l-e2 a {
+.el a {
     margin: auto;
     text-decoration: none;
 }
@@ -191,7 +192,7 @@ footer p {
     }
     #m-list {
         width: 100%;
-        display: flex;
+        display: block;
         margin: 8px 0px 0px 0px;
     }
 }
