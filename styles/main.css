@@ -21,7 +21,7 @@ Order:
 }
 
 body {
-    background-color: /* #5A3A38 */ #C5405C;
+    background-color: /* #5A3A38 */ #32101E;
     /* background-image: url('../img/background.png'); */
 }
 
@@ -42,7 +42,19 @@ header {
     overflow: hidden;
 
     border-bottom: 4px solid #000;
-    background-color: /* #FC7F4A */ #D91E3D;
+    background-color: /* #FC7F4A */ #CB0356;
+}
+
+#select-opt {
+    appearance: none;
+    border: none;
+    background: none;
+
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    position: absolute;
+    background-image: url("../img/options.png");
 }
 
 #head-p {
@@ -62,13 +74,12 @@ header {
 #left {
     width: 15%;
     display: inline-block;
-    background-color: #FC7F4A;
+    background-color: #C5405C;
 }
 
 #middle {
     width: 70%;
     z-index: 0;
-    display: inline-flexbox;
     padding: 16px;
     font-size: 24px;
     overflow: hidden;
@@ -106,7 +117,7 @@ header {
 #right {
     width: 15%;
     display: inline-block;
-    background-color: #FC7F4A;
+    background-color: #C5405C;
 }
 
 .l-e {
@@ -144,7 +155,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
 
-    background-color: #C5405C;
+    background-color: #90164F;
 }
 
 footer p {
@@ -209,8 +220,9 @@ footer p {
         margin: auto;
     }
     #middle {
+        width: 90%;
         padding: 8px;
-        font-size: 14px;
+        font-size: 16px;
     }
     #m {
         height: calc(100% - 34px);

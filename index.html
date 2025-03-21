@@ -7,8 +7,17 @@
     <title>The Sewn Identity's website</title>
 </head>
 <body>
+    <script src="script.js"></script>
     <div id="main-container">
         <header>
+            <div id="options">
+                <select id="select-opt" onchange="changeColor(value)">
+                    <option value="0" selected disabled hidden></option>
+                    <option value="1">Strawberry</option>
+                    <option value="2">Classic</option>
+                    <option value="3">Malachite</option>
+                </select>
+            </div>
             <img id="cross" src="img/cross.png">
             <p id="head-p">The Sewn Identity</p>
         </header>
@@ -32,6 +41,9 @@
                             </div>
                             <div class="l-e">
                                 <div class="el"><img class="favic" src="img/dc_favicon.png"> <a href="">thesewnidentity</a></div>
+                            </div>
+                            <div class="l-e">
+                                <div class="el">...</div>
                             </div>
                         </div>
                     </div>
