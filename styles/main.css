@@ -56,6 +56,30 @@ header {
     position: absolute;
     background-image: url("../img/options.png");
 }
+#music {
+    appearance: none;
+    border: none;
+    background: none;
+    z-index: 2;
+
+    width: 32px;
+    height: 32px;
+    left: 40px;
+    margin: 8px;
+    position: absolute;
+    background-image: url("../img/music.png");
+}
+
+#frame {
+    all: initial;
+    width: 50%;
+    height: 152px;
+    margin: 0;
+    display: none;
+    position: fixed;
+    border-radius: 12px;
+    box-shadow: -2px 4px 4px, 4px 4px 4px;
+}
 
 #head-p {
     display: flex;
@@ -149,6 +173,7 @@ footer {
     bottom: 0;
     display: flex;
     position: sticky;
+    z-index: 3;
     padding: 8px 0 8px 0;
 
     color: #FFF;
@@ -205,6 +230,12 @@ footer p {
         width: 100%;
         display: block;
         margin: 8px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #frame {
+        width: 90%;
     }
 }
 
